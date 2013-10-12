@@ -295,6 +295,8 @@
     <None Include="less\normalize.less" />
     <None Include="less\print.less" />
     <None Include="less\styles.less" />
+    <Content Include="masterpages\Base.master" />
+    <Content Include="masterpages\Home.master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />
