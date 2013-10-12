@@ -1,0 +1,9 @@
+/website/[Mm]edia
+/website/App_Data
+/website/data
+/website/install
+/website/umbraco
+/website/umbraco_client
+/website/default.aspx
+/website/Volotea.Web/aspnet_client
+website/_ReSharper.travel/*
