@@ -1,1 +1,111 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Base.master" AutoEventWireup="true" %>
+	
+
+<asp:Content ContentPlaceHolderId="mainBody" runat="server">
+	<div class="banner">
+                    <div class="container">
+                        <div id="carousel-banner" class="carousel slide">
+                            <!--<ol class="carousel-indicators">
+                    <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-banner" data-slide-to="1"></li>
+                </ol>-->
+                            <h1 class="tagline">
+                                <img src="/img/tagline.png" alt="" /></h1>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="/img/big-banner_1.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="home-experiences">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="title">
+                                        We'd like to share with you our experience on:</p>
+                                </div>
+                            </div>
+                            <div class="row section">
+                                <div class="col-sm-4">
+                                    <article>
+                            <h2><a href="#" class="link">Navitare sky sales</a></h2>
+                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
+                        </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                            <h2><a href="#" class="link">Revenue as suransse</a></h2>
+                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
+                        </article>
+                                </div>
+                                <div class="col-sm-4">
+                                    <article>
+                            <h2><a href="#" class="link">Online sales and booking</a></h2>
+                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
+                        </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="home-experts">
+                                    <h4>
+                                        Meet ours experts <span>&rarr;</span></h4>
+                                    <section>
+                            <article>
+                                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
+                                <div class="txt">
+                                    <p class="title"><a href="#">Pepe Martinez</a></p>
+                                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
+                                <div class="txt">
+                                    <p class="title"><a href="#">Pepe Martinez</a></p>
+                                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
+                                <div class="txt">
+                                    <p class="title"><a href="#">Pepe Martinez</a></p>
+                                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
+                                </div>
+                            </article>
+                        </section>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="home-blog">
+                                    <h4>
+                                        Last Blog posts <span>&rarr;</span></h4>
+                                    <section>
+                            <article>
+                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
+                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
+                            </article>
+                            <article>
+                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
+                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
+                            </article>
+                            <article>
+                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
+                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
+                            </article>
+                            <article>
+                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
+                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
+                            </article>
+                        </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</asp:Content>

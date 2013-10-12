@@ -1,11 +1,8 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
- <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="cat"><!--<![endif]-->
+    <!doctype html>
+    <html>
     <head>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -16,153 +13,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="" />
         <script src="/scripts/libs/less/less-1.4.1.min.js" type="text/javascript"></script>
-        <link rel="shortcut icon" type="image/png" href="//img/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
         <title>BTC - Barcelona Traveling Consulting</title>
         <!-- Bootstrap core CSS -->
-        <link href="/css/libs/bootstrap/bootstrap.css" rel="stylesheet">
-        <link href="css/styles.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="/css/libs/bootstrap/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="/css/styles.css" type="text/css" rel="stylesheet" media="all" />
         <link rel="stylesheet/less" type="text/css" href="/css/styles.css" />
     </head>
     <body style="">
         <div class="container">
             <div class="wrapper">
-                <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <div class="logo"><a href="index.html" title="Ir a la pagina inicial"><img src="/img/btc-logo.png" alt="BTC Barcelona Traveling Consulting" /></a></div>
-                </div>
-                <div class="col-sm-7">
-                    <div class="toplinks">
-                        <div>
-                            <a href="mailto:btc@bcntravel.com" class="link">btc@bcntravel.com</a>
-                            <p class="tel">+34 932 72 67 60</p>
+                <!-- Begin: Header -->
+                <%--<header>--%>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="logo">
+                                <a href="/en/" title="Ir a la pagina inicial">
+                                    <img src="/img/btc-logo.png" alt="BTC Barcelona Traveling Consulting" /></a></div>
                         </div>
-                        <a href="#" class="lk-contact">Contacto</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="nav-principal">
-                        <ul class="nav nav-pills pull-right">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Expertise</a></li>
-                            <li><a href="#">Archievement</a></li>
-                            <li><a href="#">Why BTC</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-                <div class="banner">
-                    <div class="container">
-                        <div id="carousel-banner" class="carousel slide">
-                            <!--<ol class="carousel-indicators">
-                    <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-banner" data-slide-to="1"></li>
-                </ol>-->
-                            <h1 class="tagline">
-                                <img src="/img/tagline.png" alt="" /></h1>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="/img/big-banner_1.jpg" alt="" />
+                        <div class="col-sm-7">
+                            <div class="toplinks">
+                                <div>
+                                    <a href="mailto:btc@bcntravel.com" class="link">btc@bcntravel.com</a>
+                                    <p class="tel">
+                                        +34 932 72 67 60</p>
                                 </div>
+                                <a href="#" class="lk-contact">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="nav-principal">
+                                <ul class="nav nav-pills pull-right">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Expertise</a></li>
+                                    <li><a href="#">Archievement</a></li>
+                                    <li><a href="#">Why BTC</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="wrap">
-                    <div class="home-experiences">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p class="title">
-                                        We'd like to share with you our experience on:</p>
-                                </div>
-                            </div>
-                            <div class="row section">
-                                <div class="col-sm-4">
-                                    <article>
-                            <h2><a href="#" class="link">Navitare sky sales</a></h2>
-                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
-                        </article>
-                                </div>
-                                <div class="col-sm-4">
-                                    <article>
-                            <h2><a href="#" class="link">Revenue as suransse</a></h2>
-                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
-                        </article>
-                                </div>
-                                <div class="col-sm-4">
-                                    <article>
-                            <h2><a href="#" class="link">Online sales and booking</a></h2>
-                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
-                        </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div class="home-experts">
-                                    <h4>
-                                        Meet ours experts <span>&rarr;</span></h4>
-                                    <section>
-                            <article>
-                                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
-                                <div class="txt">
-                                    <p class="title"><a href="#">Pepe Martinez</a></p>
-                                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
-                                <div class="txt">
-                                    <p class="title"><a href="#">Pepe Martinez</a></p>
-                                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
-                                <div class="txt">
-                                    <p class="title"><a href="#">Pepe Martinez</a></p>
-                                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
-                                </div>
-                            </article>
-                        </section>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div class="home-blog">
-                                    <h4>
-                                        Last Blog posts <span>&rarr;</span></h4>
-                                    <section>
-                            <article>
-                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
-                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
-                            </article>
-                            <article>
-                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
-                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
-                            </article>
-                            <article>
-                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
-                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
-                            </article>
-                            <article>
-                                <h6><a href="#">Vivamus consectetur ac diam a venenatis</a></h6>
-                                <p>Etiam tristique lorem et urna adipiscing, non commodo mauris elementum. Nunc id dui ac lectus sollicitudin facilisis et et velit. Nulla facilisi. Sed varius arcu nec...</p>
-                            </article>
-                        </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- End: Header -->
+                <%--</header>--%>
+                <!-- Begin: Body -->
+					
+<asp:ContentPlaceHolder Id="mainBody" runat="server">
+	<!-- Insert default "mainBody" markup here -->
+</asp:ContentPlaceHolder>
+
+                
+                <!-- End: Body -->
                 <!--wrap-->
                 <footer>
         <div class="container">
