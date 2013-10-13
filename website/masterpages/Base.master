@@ -56,7 +56,6 @@
 	            <!-- Insert default "mainBody" markup here -->
             </asp:contentplaceholder>
             <!-- End: Body -->
-            <!--wrap-->
             <!-- Begin: Footer -->
             <footer>
                 <div class="container">
@@ -72,7 +71,6 @@
             </footer>
         <!-- End: Footer -->
         </div>
-        <!--wrapper-->
         <script type="text/javascript" src="/scripts/libs/bootstrap/jquery.js"></script>
         <script type="text/javascript" src="/scripts/libs/bootstrap/bootstrap.min.js"></script>
         <!-- Script for IE8 -->
