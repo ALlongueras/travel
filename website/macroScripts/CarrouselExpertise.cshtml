@@ -1,0 +1,22 @@
+@using System.Linq
+@using System.Xml.Linq
+@using umbraco.MacroEngines;
+@using uBlogsy.Common.Extensions;
+@using uBlogsy.BusinessLogic;
+@inherits umbraco.MacroEngines.DynamicNodeContext
+@{
+    List<DynamicNode> currentNode = CurrentModel.Descendants("Page").Items.Where(x=>x.Level==3).Where(x => x.GetProperty("identifier").Value == "Expertise").ToList();
+    if (currentNode != null)
+    {
+        foreach (DynamicNode expertiseNode in currentNode.FirstOrDefault().Descendants())
+        {
+    <div class="col-sm-4">
+        <article>
+                            <h2><a href="@expertiseNode.NiceUrl" class="link">@expertiseNode.GetProperty("title")</a></h2>
+                            <p>@expertiseNode.GetProperty("summary")</p>
+                        </article>
+    </div>
+        }
+    }
+    
+}

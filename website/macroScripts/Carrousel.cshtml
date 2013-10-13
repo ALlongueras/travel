@@ -2,15 +2,25 @@
 <script src="/scripts/home.js" type="text/javascript"> </script>
 <script src="/scripts/nivo-slider/jquery.nivo.slider.js" type="text/javascript"> </script>
 <div class="banner">
-    @{
-        DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
-        foreach (dynamic imageNode in currentNode.Descendants("Carrousel"))
-        {
-            string alt = !string.IsNullOrEmpty(imageNode.name) ? @imageNode.name : string.Empty;
-        <a href="@this.Model.NodeById(@imageNode.link).Url">
-            <img src="@imageNode.image.mediaItem[0].Image.umbracoFile" alt="@alt" /></a>
-        }
-    }
+    <div class="container">
+        <div id="carousel-banner" class="carousel slide">
+            <h1 class="tagline">
+                <img src="img/tagline.png" alt="" /></h1>
+            <div class="carousel-inner">
+                <div class="item active">
+                    @{
+                        DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
+                        foreach (dynamic imageNode in currentNode.Descendants("Carrousel"))
+                        {
+                            string alt = !string.IsNullOrEmpty(imageNode.name) ? @imageNode.name : string.Empty;
+                        <a href="@this.Model.NodeById(@imageNode.link).Url">
+                            <img src="@imageNode.image.mediaItem[0].Image.umbracoFile" alt="@alt" /></a>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 @*<div class="slider-wrapper theme-default">
         <div id="slider" class="nivoSlider">

@@ -6,7 +6,7 @@
 <div class="col-sm-7">
     <div class="home-blog">
         <h4>
-            Last Blog posts <span>&rarr;</span></h4>
+            @Dictionary.CarrouselBlogTitle <span>&rarr;</span></h4>
         <section>
                             @{
                                 DynamicNode currentNode = new DynamicNode(-1);
@@ -18,7 +18,7 @@
                                     <h6>@post.GetProperty("uBlogsyContentTitle")</h6>
                                     @*<h6>@post.GetProperty("uBlogsyPostDate").Value.FormatDateTime("HH:mm")</h6>
                                     <h6>@postDate</h6>*@
-                                    <p>@post.GetProperty("uBlogsyContentBody")</p>
+                                    <p>@post.GetProperty("uBlogsyContentSummary")</p>
                                     </article>
                                 }
                             }

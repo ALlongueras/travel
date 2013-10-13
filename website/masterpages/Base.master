@@ -16,21 +16,23 @@
         <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
         <title>BTC - Barcelona Traveling Consulting</title>
         <!-- Bootstrap core CSS -->
-        <link href="/css/libs/bootstrap/bootstrap.css" type="text/css" rel="stylesheet">
+        <%--<link href="/css/libs/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />--%>
+        <link rel="stylesheet/less" type="text/css" href="/less/styles.less" />
         <link href="/css/styles.css" type="text/css" rel="stylesheet" media="all" />
-        <link rel="stylesheet/less" type="text/css" href="/css/styles.css" />
+        <%--<link rel="stylesheet/less" type="text/css" href="/css/styles.css" />--%>
     </head>
     <body style="">
-        <div class="container">
-            <div class="wrapper">
-                <!-- Begin: Header -->
-                <%--<header>--%>
+        <div class="wrapper">
+            <!-- Begin: Header -->
+            <header>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="logo">
                                 <a href="/en/" title="Ir a la pagina inicial">
-                                    <img src="/img/btc-logo.png" alt="BTC Barcelona Traveling Consulting" /></a></div>
+                                    <img src="/img/btc-logo.png" alt="BTC Barcelona Traveling Consulting" />
+                                </a>
+                            </div>
                         </div>
                         <div class="col-sm-7">
                             <div class="toplinks">
@@ -44,49 +46,37 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="nav-principal">
-                                <ul class="nav nav-pills pull-right">
-                                    <li class="active"><a href="#">Home</a></li>
-                                    <li><a href="#">Expertise</a></li>
-                                    <li><a href="#">Archievement</a></li>
-                                    <li><a href="#">Why BTC</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <umbraco:Macro Alias="Mainmenu" runat="server" />
                     </div>
                 </div>
-                <!-- End: Header -->
-                <%--</header>--%>
-                <!-- Begin: Body -->
-					
-<asp:ContentPlaceHolder Id="mainBody" runat="server">
-	<!-- Insert default "mainBody" markup here -->
-</asp:ContentPlaceHolder>
-
-                
-                <!-- End: Body -->
-                <!--wrap-->
-                <footer>
-        <div class="container">
-            <div class="row">
-                <p class="copyright">&copy; 2013 Barcelona Travel Consulting</p>
-                <ul class="links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                    <li><a href="#">Privacy</a></li>
-                </ul>
-            </div>
+            </header>
+            <!-- End: Header -->
+            <!-- Begin: Body -->
+            <asp:contentplaceholder id="mainBody" runat="server">
+	            <!-- Insert default "mainBody" markup here -->
+            </asp:contentplaceholder>
+            <!-- End: Body -->
+            <!--wrap-->
+            <!-- Begin: Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <p class="copyright">&copy; 2013 Barcelona Travel Consulting</p>
+                        <ul class="links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        <!-- End: Footer -->
         </div>
-    </footer>
-            </div>
-            <!--wrapper-->
-        </div>
+        <!--wrapper-->
         <script type="text/javascript" src="/scripts/libs/bootstrap/jquery.js"></script>
         <script type="text/javascript" src="/scripts/libs/bootstrap/bootstrap.min.js"></script>
         <!-- Script for IE8 -->
-        <script src="/scripts/libs/respond/respond.min.js"></script>
+        <script type="text/javascript" src="/scripts/libs/respond/respond.min.js"></script>
     </body>
     </html>
 </asp:Content>

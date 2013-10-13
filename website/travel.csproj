@@ -307,6 +307,10 @@
     <Content Include="macroScripts\Carrousel.cshtml" />
     <Content Include="macroScripts\CarrouselProfile.cshtml" />
     <Content Include="macroScripts\CarrouselBlog.cshtml" />
+    <Content Include="macroScripts\CarrouselExpertise.cshtml" />
+    <Content Include="macroScripts\Mainmenu.cshtml" />
+    <Content Include="masterpages\Page.master" />
+    <Content Include="masterpages\Profile.master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />
@@ -320,7 +324,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1863</DevelopmentServerPort>
+          <DevelopmentServerPort>11731</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

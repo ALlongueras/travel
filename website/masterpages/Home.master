@@ -27,24 +27,7 @@
                     </div>
                 </div>
                 <div class="row section">
-                    <div class="col-sm-4">
-                        <article>
-                            <h2><a href="#" class="link">Navitare sky sales</a></h2>
-                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
-                        </article>
-                    </div>
-                    <div class="col-sm-4">
-                        <article>
-                            <h2><a href="#" class="link">Revenue as suransse</a></h2>
-                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
-                        </article>
-                    </div>
-                    <div class="col-sm-4">
-                        <article>
-                            <h2><a href="#" class="link">Online sales and booking</a></h2>
-                            <p>Vivamus posuere accumsan varius. Mauris ut libero non risus interdum molestie.</p>
-                        </article>
-                    </div>
+                    <umbraco:Macro Alias="CarrouselExpertise" runat="server" />
                 </div>
             </div>
         </div>
