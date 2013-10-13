@@ -26,7 +26,7 @@ NOTE: It is safe to remove this comment (anything between @ * * @), the code tha
                DynamicNode home = rootNode.Descendants("Home").Items.FirstOrDefault();
                var isPageSelected = string.Compare(home.NiceUrl, CurrentModel.NiceUrl);
                var selected = isPageSelected == 0 ? " class=\"active\"" : "";
-                <li@Html.Raw(selected)><a href="@home.NiceUrl">@Dictionary.Home</a></li>
+                <li@Html.Raw(selected)><h1><a href="@home.NiceUrl">@Dictionary.Home</a></h1></li>
             }
             @{
                 DynamicNode parentNode = CurrentModel.AncestorOrSelf("Home");
@@ -34,7 +34,9 @@ NOTE: It is safe to remove this comment (anything between @ * * @), the code tha
                 {
                     isPageSelected = string.Compare(itemMenu.NiceUrl, CurrentModel.NiceUrl);
                     selected = isPageSelected == 0 ? " class=\"active\"" : "";
-                <li@Html.Raw(selected)><a href="@itemMenu.NiceUrl">@itemMenu.Name</a></li>
+                    <li@Html.Raw(selected)><h1><a href="@itemMenu.NiceUrl">
+                                               @itemMenu.Name
+                                           </a></h1></li>
                                                               selected = string.Empty;
                 }
             }
@@ -44,7 +46,7 @@ NOTE: It is safe to remove this comment (anything between @ * * @), the code tha
                 {
                     isPageSelected = string.Compare(blog.NiceUrl, CurrentModel.NiceUrl);
                     selected = isPageSelected == 0 ? " class=\"active\"" : "";
-                <li@Html.Raw(selected)><a href="@blog.NiceUrl">@Dictionary.Blog</a></li>
+                <li@Html.Raw(selected)><h1><a href="@blog.NiceUrl">@Dictionary.Blog</a></h1></li>
                 }
                 
             }

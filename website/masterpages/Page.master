@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Base.master" AutoEventWireup="true" %>
 
 <asp:content ContentPlaceHolderId="mainBody" runat="server">
-	
+	<umbraco:Macro Alias="RenderPage" runat="server" />
 </asp:content>

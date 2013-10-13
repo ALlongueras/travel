@@ -311,6 +311,7 @@
     <Content Include="macroScripts\Mainmenu.cshtml" />
     <Content Include="masterpages\Page.master" />
     <Content Include="masterpages\Profile.master" />
+    <Content Include="macroScripts\RenderPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />

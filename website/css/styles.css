@@ -4927,6 +4927,10 @@ footer .links li a {
   display: block;
   color: #2599a8;
 }
+.nav-principal h1 {
+    font: 18px 'hero', 'helvetica', 'helvetica neue', Arial, sans-serif;
+    margin: 0px;
+}
 .banner {
   width: 100%;
     /*background: white;*/
