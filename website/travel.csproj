@@ -192,6 +192,11 @@
     <Content Include="css\libs\bootstrap\bootstrap.css" />
     <Content Include="css\libs\bootstrap\navbar.css" />
     <Content Include="css\mixins.css" />
+    <Content Include="css\nivo-slider\nivo-slider.css" />
+    <Content Include="css\nivo-slider\themes\default\arrows.png" />
+    <Content Include="css\nivo-slider\themes\default\bullets.png" />
+    <Content Include="css\nivo-slider\themes\default\default.css" />
+    <Content Include="css\nivo-slider\themes\default\loading.gif" />
     <Content Include="css\normalize.css" />
     <Content Include="css\print.css" />
     <Content Include="css\styles.css" />
@@ -199,15 +204,16 @@
     <Content Include="default.aspx" />
     <Content Include="fonts\glyphiconshalflings-regular.svg" />
     <Content Include="fonts\hero-webfont.svg" />
-    <Content Include="Images\avatar-noimg.jpg" />
-    <Content Include="Images\big-banner_1.jpg" />
-    <Content Include="Images\big-banner_2.jpg" />
-    <Content Include="Images\btc-logo.png" />
-    <Content Include="Images\favicon.png" />
-    <Content Include="Images\portada13.jpg" />
-    <Content Include="Images\tagline.png" />
     <Content Include="Images\uBlogsy_feed-icon-14x14.png" />
+    <Content Include="img\avatar-noimg.jpg" />
+    <Content Include="img\big-banner_1.jpg" />
+    <Content Include="img\big-banner_2.jpg" />
+    <Content Include="img\btc-logo.png" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\portada13.jpg" />
+    <Content Include="img\tagline.png" />
     <Content Include="scripts\carousel.js" />
+    <Content Include="scripts\home.js" />
     <Content Include="scripts\jquery-1.6.min.js" />
     <Content Include="scripts\libs\bootstrap\bootstrap.min.js" />
     <Content Include="scripts\libs\bootstrap\jquery.js" />
@@ -215,6 +221,7 @@
     <Content Include="scripts\libs\html5shiv.js" />
     <Content Include="scripts\libs\less\less-1.4.1.min.js" />
     <Content Include="scripts\libs\respond\respond.min.js" />
+    <Content Include="scripts\nivo-slider\jquery.nivo.slider.js" />
     <Content Include="usercontrols\uBlogsy\Contact.ascx" />
     <Content Include="usercontrols\uBlogsy\dashboard\admin.ascx" />
     <Content Include="usercontrols\uBlogsy\dashboard\CreatePost.ascx" />
@@ -297,6 +304,9 @@
     <None Include="less\styles.less" />
     <Content Include="masterpages\Base.master" />
     <Content Include="masterpages\Home.master" />
+    <Content Include="macroScripts\Carrousel.cshtml" />
+    <Content Include="macroScripts\CarrouselProfile.cshtml" />
+    <Content Include="macroScripts\CarrouselBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />

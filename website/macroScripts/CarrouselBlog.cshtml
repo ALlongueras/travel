@@ -1,0 +1,27 @@
+@using System.Linq
+@using System.Xml.Linq
+@using umbraco.MacroEngines;
+@using uBlogsy.Common.Extensions;
+@using uBlogsy.BusinessLogic;
+<div class="col-sm-7">
+    <div class="home-blog">
+        <h4>
+            Last Blog posts <span>&rarr;</span></h4>
+        <section>
+                            @{
+                                DynamicNode currentNode = new DynamicNode(-1);
+                                List<DynamicNode> postList = currentNode.Descendants("uBlogsyPost").Items;
+                                foreach (DynamicNode post in postList.OrderByDescending(x => Int32.Parse(x.GetProperty("uBlogsyPostDate").Value.FormatDateTime("yyyyMMdd"))).Take(2))
+                                {
+                                    int postDate = Int32.Parse(@post.GetProperty("uBlogsyPostDate").Value.FormatDateTime("yyyyMMdd"));
+                                    <article>
+                                    <h6>@post.GetProperty("uBlogsyContentTitle")</h6>
+                                    @*<h6>@post.GetProperty("uBlogsyPostDate").Value.FormatDateTime("HH:mm")</h6>
+                                    <h6>@postDate</h6>*@
+                                    <p>@post.GetProperty("uBlogsyContentBody")</p>
+                                    </article>
+                                }
+                            }
+                        </section>
+    </div>
+</div>

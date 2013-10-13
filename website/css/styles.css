@@ -4929,7 +4929,8 @@ footer .links li a {
 }
 .banner {
   width: 100%;
-  background: #2599a8;
+    background: white;
+  /*background: #2599a8;*/
 }
 .banner .carousel .tagline {
   z-index: 100;

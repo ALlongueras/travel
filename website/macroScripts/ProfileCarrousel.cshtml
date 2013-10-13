@@ -1,0 +1,42 @@
+﻿@using umbraco.MacroEngines
+<div class="col-sm-5">
+    <div class="home-experts">
+        <h4>
+            @Dictionary.CarrouselProfileTitle<span>&rarr;</span></h4>
+        @*<section>*@
+        @{
+            DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
+            foreach (DynamicNode profileNode in currentNode.Descendants("Profile"))
+            {
+                dynamic profileImage = profileNode;
+<article>
+
+            <div class="avatar">
+                <img src="@profileImage.profileImage.mediaItem[0].Image.umbracoFile" alt="@profileNode.GetProperty("name")" height="100" width="90" /></div>
+
+            <div class="txt">
+                <p class="title">
+                    <a href="#">@profileNode.GetProperty("name")</a></p>
+                <p>
+                    @profileNode.GetProperty("summaryDescription")</p>
+            </div>
+ </article>
+            }
+        }
+        @*<article>
+                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
+                <div class="txt">
+                    <p class="title"><a href="#">Pepe Martinez</a></p>
+                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
+                </div>
+            </article>
+            <article>
+                <div class="avatar"><img src="/img/avatar-noimg.jpg" alt="" /></div>
+                <div class="txt">
+                    <p class="title"><a href="#">Pepe Martinez</a></p>
+                    <p>In gravida gravida eros eget hendrerit. Curabitur ultrices gravida leo.</p>
+                </div>
+            </article>*@
+        @*</section>*@
+    </div>
+</div>
