@@ -188,6 +188,7 @@
     <Content Include="bin\x86\sqlceme40.dll" />
     <Content Include="bin\x86\sqlceqp40.dll" />
     <Content Include="bin\x86\sqlcese40.dll" />
+    <Content Include="css\blog.css" />
     <Content Include="css\fonts.css" />
     <Content Include="css\libs\bootstrap\bootstrap.css" />
     <Content Include="css\libs\bootstrap\navbar.css" />
@@ -312,6 +313,7 @@
     <Content Include="masterpages\Page.master" />
     <Content Include="masterpages\Profile.master" />
     <Content Include="macroScripts\RenderPage.cshtml" />
+    <Content Include="masterpages\BlogLanding.master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />

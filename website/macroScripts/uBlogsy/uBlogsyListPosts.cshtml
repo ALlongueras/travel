@@ -55,7 +55,7 @@
         int postCount = PostService.Instance.GetPosts(Model.Id, tag, category, author, searchTerm, commenter, 0, int.MaxValue).Count;
         
         // pagination
-        @RenderPagination(page, postCount, count)
+        //@RenderPagination(page, postCount, count)
                 
         // render search result count when this script is displaying search results
         if (!string.IsNullOrEmpty(searchTerm))

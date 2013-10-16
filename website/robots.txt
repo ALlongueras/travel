@@ -1,0 +1,25 @@
+# robots.txt for Umbraco
+User-agent: *
+Disallow: /aspnet_client/
+Disallow: /bin/
+Disallow: /config/
+Disallow: /css/
+Disallow: /data/
+Disallow: /install/
+Disallow: /masterpages/
+Disallow: /python/
+Disallow: /scripts/
+Disallow: /umbraco/
+Disallow: /umbraco_client/
+Disallow: /usercontrols/
+Disallow: /xslt/
+
+Disallow: /en/
+Disallow: /en/expertise/
+Disallow: /en/expertise/navitaire/
+Disallow: /en/expertise/revenue/
+Disallow: /en/expertise/online-sales/
+Disallow: /en/why-btc/
+Disallow: /en/archivement/
+Disallow: /my-blog/
+Disallow: /
