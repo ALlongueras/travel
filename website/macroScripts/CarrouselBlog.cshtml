@@ -15,7 +15,7 @@
                                 {
                                     int postDate = Int32.Parse(@post.GetProperty("uBlogsyPostDate").Value.FormatDateTime("yyyyMMdd"));
                                     <article>
-                                    <h6><a href="@post.NiceUrl">@post.GetProperty("uBlogsyContentTitle")</a></h6>
+                                    <h3><a href="@post.NiceUrl">@post.GetProperty("uBlogsyContentTitle")</a></h3>
                                     @*<h6>@post.GetProperty("uBlogsyPostDate").Value.FormatDateTime("HH:mm")</h6>
                                     <h6>@postDate</h6>*@
                                     <p>@post.GetProperty("uBlogsyContentSummary")</p>
