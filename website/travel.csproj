@@ -13,6 +13,9 @@
     <RootNamespace>travel</RootNamespace>
     <AssemblyName>travel</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -203,6 +206,7 @@
     <Content Include="css\normalize.css" />
     <Content Include="css\page.css" />
     <Content Include="css\print.css" />
+    <Content Include="css\profile.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\uBlogsy.css" />
     <Content Include="css\umbracoStyles.css" />
@@ -315,9 +319,12 @@
     <Content Include="macroScripts\CarrouselExpertise.cshtml" />
     <Content Include="macroScripts\Mainmenu.cshtml" />
     <Content Include="masterpages\Page.master" />
-    <Content Include="masterpages\Profile.master" />
     <Content Include="macroScripts\RenderPage.cshtml" />
     <Content Include="masterpages\BlogLanding.master" />
+    <Content Include="masterpages\Profiles.master" />
+    <Content Include="macroScripts\Profile.cshtml" />
+    <Content Include="macroScripts\ProfilesList.cshtml" />
+    <Content Include="masterpages\ProfileDetail.master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />
@@ -344,6 +351,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

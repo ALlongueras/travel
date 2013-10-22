@@ -6,7 +6,7 @@
         @*<section>*@
         @{
             DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
-            List<DynamicNode> folderList = CurrentModel.Descendants("Folder").Items;
+            List<DynamicNode> folderList = CurrentModel.Descendants("Page").Items;
             List<DynamicNode> profileFolder = folderList.Where(x => x.GetProperty("identifier").Value == "Profiles").ToList();
             foreach (DynamicNode profileNode in profileFolder.First().Descendants("Profile"))
             {
@@ -31,7 +31,7 @@
                         <p class="title">
                             @if (!string.IsNullOrEmpty(profileNode.GetProperty("name").ToString()))
                             {
-                                <a href="#">@profileNode.GetProperty("name")</a>
+                                <a href="@profileNode.Url">@profileNode.GetProperty("name")</a>
                             }
                              
                         </p>

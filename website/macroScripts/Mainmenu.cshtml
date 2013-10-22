@@ -35,7 +35,7 @@ NOTE: It is safe to remove this comment (anything between @ * * @), the code tha
                 //DynamicNode parentNode = CurrentModel.AncestorOrSelf("Home");
                 if (parentNode != null)
                 {
-                    foreach (DynamicNode itemMenu in parentNode.Descendants().Items.Where(x => x.HasProperty("isMainMenuItem").Equals(true)).Where(x => x.Level == 3))
+                    foreach (DynamicNode itemMenu in parentNode.Descendants().Items.Where(x => x.HasProperty("isMainMenuItem").Equals(true)).Where(x => x.GetPropertyValue("isMainMenuItem")=="1").Where(x => x.Level == 3))
                     {
                         isPageSelected = string.Compare(itemMenu.NiceUrl, CurrentModel.NiceUrl);
                         selected = isPageSelected == 0 ? " class=\"active\"" : "";

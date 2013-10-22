@@ -1,0 +1,29 @@
+﻿.profile .col-sm-7
+{
+    width:65%;
+}
+.profile .col-sm-3
+{
+    width:30%;
+    margin-left: 5%;
+}
+.profile .avatar
+{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.profile h2 {
+    color: #2599a8;
+}
+.profile .interview 
+{
+    clear: both;
+}
+.profile .col-sm-3 .profileBlock {
+    clear: both;
+}
+.profile .col-sm-3 h3 {
+    margin-top: 0px;
+    padding-top: 20px;
+}

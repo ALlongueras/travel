@@ -3,8 +3,9 @@
     <div class="container">
         <div class="row page">
             @{
-                <h2>@CurrentModel.GetProperty("title")</h2>
-                <p>@CurrentModel.GetProperty("text")</p>
+                DynamicNode nodeToRender = CurrentModel.NodeTypeAlias=="Page" ? CurrentModel : CurrentModel.AncestorOrSelf("Page");
+                <h2>@nodeToRender.GetProperty("title")</h2>
+                <p>@nodeToRender.GetProperty("text")</p>
             }
         </div>
     </div>
