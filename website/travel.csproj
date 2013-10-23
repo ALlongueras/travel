@@ -194,6 +194,7 @@
     <Content Include="bin\x86\sqlcese40.dll" />
     <Content Include="css\blog.css" />
     <Content Include="css\fonts.css" />
+    <Content Include="css\generic.css" />
     <Content Include="css\home.css" />
     <Content Include="css\libs\bootstrap\bootstrap.css" />
     <Content Include="css\libs\bootstrap\navbar.css" />
@@ -325,6 +326,9 @@
     <Content Include="macroScripts\Profile.cshtml" />
     <Content Include="macroScripts\ProfilesList.cshtml" />
     <Content Include="masterpages\ProfileDetail.master" />
+    <Content Include="macroScripts\Header.cshtml" />
+    <Content Include="masterpages\Expertise.master" />
+    <Content Include="macroScripts\Expertise.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />
