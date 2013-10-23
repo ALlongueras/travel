@@ -19,6 +19,7 @@
         <%--<link href="/css/libs/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />--%>
         <link rel="stylesheet/less" type="text/css" href="/less/styles.less" />
         <link href="/css/styles.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="/css/generic.css" rel="stylesheet" type="text/css" />
         <%--<link rel="stylesheet/less" type="text/css" href="/css/styles.css" />--%>
     </head>
     <body style="">
@@ -28,23 +29,7 @@
             <header>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-5">
-                            <div class="logo">
-                                <a href="/en/" title="Ir a la pagina inicial">
-                                    <img src="/img/btc-logo.png" alt="BTC Barcelona Traveling Consulting" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="toplinks">
-                                <div>
-                                    <a href="mailto:btc@bcntravel.com" class="link">btc@bcntravel.com</a>
-                                    <p class="tel">
-                                        +34 932 72 67 60</p>
-                                </div>
-                                <a href="#" class="lk-contact">Contacto</a>
-                            </div>
-                        </div>
+                        <umbraco:Macro Alias="Header" runat="server" />
                     </div>
                     <div class="row">
                         <umbraco:Macro Alias="Mainmenu" runat="server" />

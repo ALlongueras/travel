@@ -1,6 +1,11 @@
 ﻿body {
 }
 
-div.blog h1{
+div.blog h2{
+    margin-bottom: 35px;
+    color: #2599a8;
     text-align: center;
+}
+div.page h2 {
+    
 }

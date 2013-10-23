@@ -1,0 +1,14 @@
+@using umbraco.MacroEngines
+<div class="wrap">
+    <div class="container">
+        <div class="row page">
+            @{
+                foreach (DynamicNode expertise in CurrentModel.Descendants("Page").Items.Where(x=>x.GetPropertyValue("identifier")=="Expertise"))
+                {
+                    <a href="@expertise.Url"><h3>@expertise.GetProperty("Title")</h3></a>
+                    <p>@expertise.GetProperty("summary")</p>
+                }
+            }
+        </div>
+    </div>
+</div>

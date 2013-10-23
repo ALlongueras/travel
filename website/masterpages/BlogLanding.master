@@ -3,7 +3,7 @@
 <asp:content ContentPlaceHolderId="mainBody" runat="server">
     <link href="/css/blog.css" rel="stylesheet" type="text/css" />
 	<div class="container blog">
-	    <h1><umbraco:Item runat="server" Field="uBlogsyContentTitle" /></h1>
+	    <h2><umbraco:Item runat="server" Field="uBlogsyContentTitle" /></h2>
         <umbraco:Item runat="server" Field="uBlogsyContentBody" />
     </div>
 

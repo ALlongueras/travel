@@ -14,9 +14,9 @@
     }
     
     <div class="uBlogsy_post uBlogsy_bottom_border">
-        <h2>
-            <a href="@d.Url" title="@d.GetProperty("uBlogsyContentTitle")"><span>@d.GetProperty("uBlogsyContentTitle")</span></a></h2>
-        <h3 class="uBlogsy_post_date">@d.GetProperty("uBlogsyPostDate").Value.FormatDateTime("dddd MMMM d, yyyy")</h3>
+        <h3>
+            <a href="@d.Url" title="@d.GetProperty("uBlogsyContentTitle")"><span>@d.GetProperty("uBlogsyContentTitle")</span></a></h3>
+        <p class="uBlogsy_post_date">@d.GetProperty("uBlogsyPostDate").Value.FormatDateTime("dddd MMMM d, yyyy")</p>
         <div class="uBlogsy_post_body">
            @RenderPostBody(d) 
         </div>

@@ -5,7 +5,7 @@
     <div class="container">
         <div id="carousel-banner" class="carousel slide">
             <span class="tagline">
-                <img src="/img/tagline.png" alt="" /></span>
+                @Html.Raw(Dictionary.CarrouselCentralText)</span>
             <div class="carousel-inner">
                 <div class="item active">
                     @{
@@ -13,7 +13,7 @@
                         foreach (dynamic imageNode in currentNode.Descendants("Carrousel"))
                         {
                             string alt = !string.IsNullOrEmpty(imageNode.name) ? @imageNode.name : string.Empty;
-                        <a href="@this.Model.NodeById(@imageNode.link).Url">
+                        <a>
                             <img src="@imageNode.image.mediaItem[0].Image.umbracoFile" alt="@alt" /></a>
                         }
                     }

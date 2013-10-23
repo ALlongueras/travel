@@ -1,0 +1,9 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Base.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="mainBody" runat="server">
+    <link href="/css/page.css" rel="stylesheet" type="text/css" />
+    <div class="expertise">
+        <umbraco:Macro ID="Macro1" Alias="RenderPage" runat="server" />
+        <umbraco:Macro Alias="Expertise" runat="server" />
+    </div>
+</asp:Content>

@@ -1,7 +1,14 @@
 ﻿div.page h2 {
     margin-bottom: 35px;
     color: #2599a8;
+    text-align: center;
 }
 div.page p{
     margin-left: 15px;
+}
+.expertise .wrap {
+    padding-bottom: 20px;
+}
+div.page h3 {
+    color: #2599a8;
 }

@@ -19,11 +19,11 @@
         <div id="uBlogsy">
             <div id="uBlogsy_header_container">
                 <div id="uBlogsy_header_inner">
-                    <h1>
+                    <h2>
                         <%--get site name--%>
                         <umbraco:Macro runat="server" Language="razor">@{ var landing = uBlogsy.BusinessLogic.DataService.Instance.GetLanding(Model.Id);
                             <a href="@landing.Url">@landing.uBlogsyContentTitle</a> } </umbraco:Macro>
-                    </h1>
+                    </h2>
                 </div>
             </div>
             <%--top navigation--%>
