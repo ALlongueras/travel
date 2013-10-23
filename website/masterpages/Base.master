@@ -21,9 +21,47 @@
         <link href="/css/styles.css" type="text/css" rel="stylesheet" media="all" />
         <link href="/css/generic.css" rel="stylesheet" type="text/css" />
         <%--<link rel="stylesheet/less" type="text/css" href="/css/styles.css" />--%>
+        <!--Google Maps Api -->
+        <style type="text/css">
+            html
+            {
+                height: 100%;
+            }
+            body
+            {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #map-canvas
+            {
+                height: 100%;
+            }
+        </style>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBNt5jy1JAiSmvEf-iRHSw36BKH90Ymlyo&sensor=false">
+        </script>
+        <script type="text/javascript">
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(41.404833, 2.192080);
+                var mapOptions = {
+                    center: myLatlng,
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: 'Newshore Servicios Globales'
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
     <body style="">
-        <h1 class="hide">Barcelona Travel Consulting</h1>
+        <h1 class="hide">
+            Barcelona Travel Consulting</h1>
         <div class="wrapper">
             <!-- Begin: Header -->
             <header>
@@ -55,7 +93,7 @@
                     </div>
                 </div>
             </footer>
-        <!-- End: Footer -->
+            <!-- End: Footer -->
         </div>
         <script type="text/javascript" src="/scripts/libs/bootstrap/jquery.js"></script>
         <script type="text/javascript" src="/scripts/libs/bootstrap/bootstrap.min.js"></script>

@@ -8,7 +8,7 @@
             DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
             List<DynamicNode> folderList = CurrentModel.Descendants("Page").Items;
             List<DynamicNode> profileFolder = folderList.Where(x => x.GetProperty("identifier").Value == "Profiles").ToList();
-            foreach (DynamicNode profileNode in profileFolder.First().Descendants("Profile"))
+            foreach (DynamicNode profileNode in profileFolder.First().Descendants("Profile").Items.GetRandom(3))
             {
                 dynamic profileImage = profileNode;
                 <article>
