@@ -3,8 +3,8 @@
     color: #2599a8;
     text-align: center;
 }
-div.page p{
-    /*margin-left: 15px;*/
+div.profile .page p{
+    margin-left: 15px;
 }
 .expertise .wrap {
     padding-bottom: 20px;
