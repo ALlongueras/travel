@@ -20,7 +20,7 @@
 {
     clear: both;
 }
-.profile .col-sm-3 .profileBlock {
+.profile .col-sm-3 .profileBlock, .profile .col-sm-13 .profileBlock {
     clear: both;
 }
 .profile .col-sm-3 h3 {

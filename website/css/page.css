@@ -12,3 +12,6 @@ div.page p{
 div.page h3 {
     color: #2599a8;
 }
+div.col-sm-13 {
+    margin-left: 20px;
+}

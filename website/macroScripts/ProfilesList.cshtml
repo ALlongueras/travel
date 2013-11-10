@@ -1,31 +1,60 @@
 @using umbraco.MacroEngines
 @inherits umbraco.MacroEngines.DynamicNodeContext
-<div class="col-sm-3">
-    @{
-        string UrlCurrentProfile = CurrentModel.Url;
-        foreach (DynamicNode profile in CurrentModel.AncestorOrSelf("Page").Descendants("Profile").Items.Where(x => x.Url != UrlCurrentProfile))
-        {
-            dynamic imageProfile = profile;
-        <div class="profileBlock">
-            <div class="avatar">
-                @{
-            try
-            {
-                    <img src="@imageProfile.profileImage.mediaItem[0].Image.umbracoFile" height="100" width="90" />
-            }
-            catch (Exception)
-            {
-                //Show default image
-                    <img src="/img/defaultImage.jpg" alt="" height="100" width="90" />
-            }
-                }
-            </div>
-            <div class="txt">
-                <h3>
-                    <a href="@profile.Url">@profile.GetProperty("Name")</a>
-                </h3>
-            </div>
-        </div>
-        }
+@{
+    string className = string.Empty;
+    int numberOfColumns = Convert.ToInt32(Parameter.size);
+    
+    switch (numberOfColumns)
+    {
+        case 3:
+            className = "col-sm-3 profileList";
+            break;
+        case 13:
+            className = "col-sm-13";
+            break;
+        default:
+            className = "col-sm-13";
+            break;
     }
+    int numberOfItems = CurrentModel.AncestorOrSelf("Home").Descendants("Profile").Items.Count - 1;
+}
+<input type="hidden" id="profileItems" value="@numberOfItems"/>
+<div class="@className">
+    <ul class="list">
+        @{
+            string UrlCurrentProfile = CurrentModel.Url;
+            foreach (DynamicNode profile in CurrentModel.AncestorOrSelf("Page").Descendants("Profile").Items.Where(x => x.Url != UrlCurrentProfile))
+            {
+                dynamic imageProfile = profile;
+            <li>
+                <div class="profileBlock">
+                    <div class="avatar">
+                        @{
+                try
+                {
+                            <img src="@imageProfile.profileImage.mediaItem[0].Image.umbracoFile" height="100" width="90" />
+                }
+                catch (Exception)
+                {
+                    //Show default image
+                            <img src="/img/defaultImage.jpg" alt="" height="100" width="90" />
+                }
+                        }
+                    </div>
+                    <div class="txt">
+                        <h3>
+                            <a href="@profile.Url">@profile.GetProperty("Name")</a>
+                        </h3>
+                        @{
+                if (Parameter.size == "13")
+                {
+                            <p>@profile.GetProperty("summaryDescription")</p>
+                }
+                        }
+                    </div>
+                </div>
+            </li>
+            }
+        }
+    </ul>
 </div>

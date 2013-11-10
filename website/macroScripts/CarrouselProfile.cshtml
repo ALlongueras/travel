@@ -1,50 +1,59 @@
 ﻿@using umbraco.MacroEngines
+
 <div class="col-sm-5">
     <div class="home-experts">
-        <h4>
-            @Dictionary.CarrouselProfileTitle<span>&rarr;</span></h4>
-        @*<section>*@
-        @{
-            DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
-            List<DynamicNode> folderList = CurrentModel.Descendants("Page").Items;
-            List<DynamicNode> profileFolder = folderList.Where(x => x.GetProperty("identifier").Value == "Profiles").ToList();
-            foreach (DynamicNode profileNode in profileFolder.First().Descendants("Profile").Items.GetRandom(3))
-            {
-                dynamic profileImage = profileNode;
-                <article>
-                    <div class="avatar">
-                    @{
-                try
-                {
-                    var image = profileImage.profileImage.mediaItem[0].Image.umbracoFile;
-                            <img src="@image" alt="@profileNode.GetProperty("name")" height="100" width="90" />
-                }
-                catch (Exception)
-                {
-                    //Show default image
-                            <img src="/img/defaultImage.jpg" alt="" height="100" width="90" />
+        <h4><a href="@CurrentModel.Descendants("Page").Items.FirstOrDefault(x => x.GetProperty("identifier").Value=="Profiles").Url">@Dictionary.CarrouselProfileTitle</a>
+            <span>&rarr;</span></h4>
+        <div class="carrouselProfile">
+            <ul class="list">
+                @*<section>*@
+                @{
+                    DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
+                    List<DynamicNode> folderList = CurrentModel.Descendants("Page").Items;
+                    List<DynamicNode> profileFolder = folderList.Where(x => x.GetProperty("identifier").Value == "Profiles").ToList();
+                    foreach (DynamicNode profileNode in profileFolder.First().Descendants("Profile"))
+                    {
+                        dynamic profileImage = profileNode;
+
+                        <li>
+                            <article>
+                                <div class="avatar">
+                                    @{
+                                        try
+                                        {
+                                            var image = profileImage.profileImage.mediaItem[0].Image.umbracoFile;
+                                            <img src="@image" alt="@profileNode.GetProperty("name")" height="100" width="90" />
+                                        }
+                                        catch (Exception)
+                                        {
+                                            //Show default image
+                                            <img src="/img/defaultImage.jpg" alt="" height="100" width="90" />
                     
-                }
-                    }
-                    </div>
-                    <div class="txt">
-                        <p class="title">
-                            @if (!string.IsNullOrEmpty(profileNode.GetProperty("name").ToString()))
-                            {
-                                <a href="@profileNode.Url">@profileNode.GetProperty("name")</a>
-                            }
+                                        }
+                                    }
+                                </div>
+                                <div class="txt">
+                                    <p class="title">
+                                        @if (!string.IsNullOrEmpty(profileNode.GetProperty("name").ToString()))
+                                        {
+                                            <a href="@profileNode.Url">@profileNode.GetProperty("name")</a>
+                                        }
                              
-                        </p>
-                        <p>
-                            @if (!string.IsNullOrEmpty(profileNode.GetProperty("summaryDescription").ToString()))
-                            {                            
-                                @profileNode.GetProperty("summaryDescription")
-                            }
-                        </p>
-                    </div>
-                </article>
-            }
-        }
-        @*</section>*@
+                                    </p>
+                                    <p>
+                                        @if (!string.IsNullOrEmpty(profileNode.GetProperty("summaryDescription").ToString()))
+                                        {                            
+                                            @profileNode.GetProperty("summaryDescription")
+                                        }
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                    }
+                }
+                @*</section>*@
+            </ul>
+        </div>
     </div>
 </div>
+<input type="hidden" id="profileItems" value="@profileFolder.First().Descendants("Profile").Items.Count()"/>
