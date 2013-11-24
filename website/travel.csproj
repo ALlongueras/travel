@@ -332,6 +332,8 @@
     <Content Include="masterpages\Expertise.master" />
     <Content Include="macroScripts\Expertise.cshtml" />
     <Content Include="macroScripts\MetaTags.cshtml" />
+    <Content Include="macroScripts\FooterMenu.cshtml" />
+    <Content Include="macroScripts\CarrouselClients.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />

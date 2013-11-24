@@ -75,12 +75,7 @@
             <footer>
                 <div class="container">
                     <div class="row">
-                        <p class="copyright">&copy; 2013 Barcelona Travel Consulting</p>
-                        <ul class="links">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
+                        <umbraco:Macro Alias="FooterMenu" runat="server" />
                     </div>
                 </div>
             </footer>

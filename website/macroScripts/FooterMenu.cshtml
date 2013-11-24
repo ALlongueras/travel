@@ -1,0 +1,14 @@
+@using umbraco.MacroEngines
+@inherits umbraco.MacroEngines.DynamicNodeContext
+<p class="copyright">
+    &copy; 2013 Barcelona Travel Consulting</p>
+<ul class="links">
+    @{
+        DynamicNode rootNode = new DynamicNode(-1);
+        DynamicNode home = rootNode.Descendants("Home").Items.FirstOrDefault();
+        foreach (DynamicNode dynamicNode in home.Descendants("Page").Items.Where(x => x.GetPropertyValue("isFooterMenuItem")=="1"))
+        {
+        <li><a href="@dynamicNode.Url">@dynamicNode.Name</a></li>
+        }
+    }
+</ul>

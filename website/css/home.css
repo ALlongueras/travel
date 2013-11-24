@@ -21,3 +21,15 @@ div.home-blog h3 {
 div.home-experts h4, div.home-blog h4 {
     text-transform: none;
 }
+ul.ourClientsCarrousel li{
+    float: left;
+    margin: 10px;
+}
+ul.ourClientsCarrousel img{
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+}
+ul.ourClientsCarrousel p{
+    text-align: center;
+}

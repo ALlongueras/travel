@@ -21,7 +21,8 @@
         <div class="container">
             <div class="row">
                 <umbraco:Macro Alias="CarrouselProfile" runat="server" />
-                <umbraco:Macro Alias="CarrouselBlog" runat="server" />
+				<umbraco:Macro Alias="CarrouselClients" runat="server" />
+                <%--<umbraco:Macro Alias="CarrouselBlog" runat="server" />--%>
             </div>
         </div>
     </div>

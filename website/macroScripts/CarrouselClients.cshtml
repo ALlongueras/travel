@@ -1,0 +1,34 @@
+﻿@using System.Linq
+@using System.Xml.Linq
+@using umbraco.MacroEngines;
+@using uBlogsy.Common.Extensions;
+@using uBlogsy.BusinessLogic;
+@inherits umbraco.MacroEngines.DynamicNodeContext
+@{
+    <div class="col-sm-6">
+        <div class="home-experts">
+            <h4>
+                <a href="@CurrentModel.Descendants("Page").Items.FirstOrDefault(x => x.GetProperty("identifier").Value == "ourClients").Url">@Dictionary.CarrouselClientsTitle</a>
+                <span>&rarr;</span></h4>
+            @{
+                List<DynamicNode> folderList = CurrentModel.Descendants("Page").Items;
+                List<DynamicNode> profileFolder = folderList.Where(x => x.GetProperty("identifier").Value == "ourClients").ToList();
+            }
+            <ul class="ourClientsCarrousel">
+                @foreach (DynamicNode profileNode in profileFolder.First().Descendants("Client"))
+                {
+                    <li>
+                        <p>@profileNode.GetProperty("name")</p>
+                        @{
+                    dynamic profileImage = profileNode;
+                    var image = profileImage.image.mediaItem[0].Image.umbracoFile;
+                        }
+                        <a href="@profileNode.Url">
+                            <img src="@image" alt="@profileNode.GetProperty("name")" height="100" width="90" />
+                        </a></li>
+                }
+            </ul>
+        </div>
+    </div>
+        
+}
