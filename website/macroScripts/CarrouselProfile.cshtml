@@ -11,13 +11,14 @@
                     DynamicNode currentNode = new DynamicNode(CurrentModel.Id);
                     List<DynamicNode> folderList = CurrentModel.Descendants("Page").Items;
                     List<DynamicNode> profileFolder = folderList.Where(x => x.GetProperty("identifier").Value == "Profiles").ToList();
-                    foreach (DynamicNode profileNode in profileFolder.First().Descendants("Profile"))
+                    foreach (DynamicNode profileNode in profileFolder.First().Descendants("Profile").Random(profileFolder.First().Descendants("Profile").Items.Count))
                     {
                         dynamic profileImage = profileNode;
 
                         <li>
                             <article>
                                 <div class="avatar">
+                                    <a href="@profileNode.Url">
                                     @{
                                         try
                                         {
@@ -31,6 +32,7 @@
                     
                                         }
                                     }
+                                    </a>
                                 </div>
                                 <div class="txt">
                                     <p class="title">
