@@ -21,8 +21,9 @@ div.home-blog h3 {
 div.home-experts h4, div.home-blog h4 {
     text-transform: none;
 }
-li div.txt h3 a{
+li div.txt p a{
     color: #777777;
+    font-size: 20px;
 }
 ul.ourClientsCarrousel li{
     float: left;
