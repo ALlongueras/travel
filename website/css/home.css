@@ -21,6 +21,9 @@ div.home-blog h3 {
 div.home-experts h4, div.home-blog h4 {
     text-transform: none;
 }
+li div.txt h3 a{
+    color: #777777;
+}
 ul.ourClientsCarrousel li{
     float: left;
     margin: 10px;
@@ -30,6 +33,6 @@ ul.ourClientsCarrousel img{
     height: 150px;
     margin: 5px;
 }
-ul.ourClientsCarrousel p{
+ul.ourClientsCarrousel h3{
     text-align: center;
 }
