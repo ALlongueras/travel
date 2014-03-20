@@ -2,14 +2,15 @@
 
 <asp:Content ContentPlaceHolderID="mainBody" runat="server">
     <link href="/css/home.css" rel="stylesheet" type="text/css" />
-        <umbraco:Macro Alias="Carrousel" runat="server" />
+    <umbraco:Macro Alias="Carrousel" runat="server" />
     <div class="wrap">
         <div class="home-experiences">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <p class="title">
-                            We'd like to share with you our experience on:</p>
+                            <umbraco:Item Field="#CarrouselTitle" runat="server" />
+                        </p>
                     </div>
                 </div>
                 <div class="row section">
@@ -20,7 +21,8 @@
         <div class="container">
             <div class="row">
                 <umbraco:Macro Alias="CarrouselProfile" runat="server" />
-				<umbraco:Macro Alias="CarrouselBlog" runat="server" />
+				<umbraco:Macro Alias="CarrouselClients" runat="server" />
+                <%--<umbraco:Macro Alias="CarrouselBlog" runat="server" />--%>
             </div>
         </div>
     </div>
