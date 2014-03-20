@@ -12,3 +12,5 @@
 website/bin/*.pdb
 website/obj/Debug/*.dll
 website/bin/*.pdb
+backupCode/*
+website/obj/*

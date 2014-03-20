@@ -1,3 +1,6 @@
 ﻿.informationContact {
     margin-left: 20px;
 }
+ul.list li {
+    display: block;
+}

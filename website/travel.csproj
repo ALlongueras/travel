@@ -229,9 +229,11 @@
     <Content Include="scripts\libs\bootstrap\jquery.js" />
     <Content Include="scripts\libs\html5shiv-printshiv.js" />
     <Content Include="scripts\libs\html5shiv.js" />
+    <Content Include="scripts\libs\jquery.cycle.all.js" />
     <Content Include="scripts\libs\less\less-1.4.1.min.js" />
     <Content Include="scripts\libs\respond\respond.min.js" />
     <Content Include="scripts\nivo-slider\jquery.nivo.slider.js" />
+    <Content Include="scripts\profileCycle.js" />
     <Content Include="usercontrols\uBlogsy\Contact.ascx" />
     <Content Include="usercontrols\uBlogsy\dashboard\admin.ascx" />
     <Content Include="usercontrols\uBlogsy\dashboard\CreatePost.ascx" />
@@ -329,6 +331,9 @@
     <Content Include="macroScripts\Header.cshtml" />
     <Content Include="masterpages\Expertise.master" />
     <Content Include="macroScripts\Expertise.cshtml" />
+    <Content Include="macroScripts\MetaTags.cshtml" />
+    <Content Include="macroScripts\FooterMenu.cshtml" />
+    <Content Include="macroScripts\CarrouselClients.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />

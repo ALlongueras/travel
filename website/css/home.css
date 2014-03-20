@@ -18,3 +18,22 @@ div.home-blog h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 41px;
 }
+div.home-experts h4, div.home-blog h4 {
+    text-transform: none;
+}
+li div.txt p a{
+    color: #777777;
+    font-size: 20px;
+}
+ul.ourClientsCarrousel li{
+    float: left;
+    margin: 10px;
+}
+ul.ourClientsCarrousel img{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+}
+ul.ourClientsCarrousel h3{
+    text-align: center;
+}
