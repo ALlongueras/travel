@@ -1,0 +1,58 @@
+@using umbraco.MacroEngines
+@{
+    DynamicNode nodeProducts = new DynamicNode();
+    DynamicNode nodeCategories = new DynamicNode();
+    foreach (var item in Model.Children)
+    {
+            if(item.Name.Equals("Products")) 
+            {
+                nodeProducts = item;
+            }
+            else if (item.Name.Equals("Products"))
+            {
+                nodeCategories = item;
+            }
+    }
+    
+    System.Xml.XPath.XPathNodeIterator xpathIterator = @umbraco.library.GetPreValues(1218);
+    xpathIterator.MoveNext(); //move to first
+    System.Xml.XPath.XPathNodeIterator preValues = xpathIterator.Current.SelectChildren("preValue", "");
+    
+    
+    
+}
+
+<link href="/css/products.css" rel="stylesheet" type="text/css" />
+<link href="/css/screen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/scripts/products.js"></script>
+
+<div class="wrap-products">
+    <div id="container-categories">
+        <div data-filter="*">show all</div>
+        @while (preValues.MoveNext())
+        {
+            string preValue = preValues.Current.Value;
+            <div data-filter=".@preValue.Replace(" ", "-").Replace(",", " ").ToLower()">@preValue</div>
+        }
+    </div>
+    <div id="container-products">
+        @foreach (var product in @nodeProducts.GetChildrenAsList.Items)
+        {
+            string categories = @product.GetProperty("selectCategories").Value.Replace(" ", "-").Replace(",", " ").ToLower();
+            <div id="@product.Id" style="background: #@product.GetProperty("color").Value" class="item @categories">
+                <img width="100px" src="http://i435.photobucket.com/albums/qq71/Kyrie-Senpai/Trafalgar_Law_logo_by_JanxAngel.png" alt="Logo Temporal" />
+                <h2>@product.GetProperty("title")</h2>
+                <p>@Html.Raw(product.GetProperty("description").Value.Substring(0, 50))...</p>
+            </div>
+        }
+    </div>
+    <div id="container-description-products">
+        @foreach (var product in @nodeProducts.GetChildrenAsList.Items)
+        {
+            <div class="description-product-@product.Id">
+                <h3>@product.GetProperty("title")</h3>
+                <p>@product.GetProperty("description")</p>
+            </div>
+        }
+    </div>
+</div>

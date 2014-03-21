@@ -334,6 +334,7 @@
     <Content Include="macroScripts\MetaTags.cshtml" />
     <Content Include="macroScripts\FooterMenu.cshtml" />
     <Content Include="macroScripts\CarrouselClients.cshtml" />
+    <Content Include="macroScripts\Products.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\" />

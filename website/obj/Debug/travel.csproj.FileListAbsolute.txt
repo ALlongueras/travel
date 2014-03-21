@@ -41,3 +41,89 @@ C:\TravelNewshore\travel\bin\UrlRewritingNet.UrlRewriter.dll
 C:\TravelNewshore\travel\obj\Debug\ResolveAssemblyReference.cache
 C:\TravelNewshore\travel\obj\Debug\travel.dll
 C:\TravelNewshore\travel\obj\Debug\travel.pdb
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\travel.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\travel.pdb
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\businesslogic.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\ClientDependency.Core.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\cms.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\controls.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\CookComputing.XmlRpcV2.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Examine.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\HtmlAgilityPack.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\interfaces.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Lucene.Net.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Microsoft.Web.Helpers.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\MySql.Data.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Our.Umbraco.uGoLive.47x.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Our.Umbraco.uGoLive.Checks.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Our.Umbraco.uGoLive.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\SQLCE4Umbraco.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\System.Data.SqlServerCe.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\System.Data.SqlServerCe.Entity.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\System.Web.Helpers.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\System.Web.Razor.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\System.Web.WebPages.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\System.Web.WebPages.Razor.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\TidyNet.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Umbraco.Core.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.DataLayer.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.editorControls.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.MacroEngines.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.macroRenderings.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.providers.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\Umbraco.Web.UI.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.webservices.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\umbraco.XmlSerializers.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\UmbracoExamine.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\bin\UrlRewritingNet.UrlRewriter.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\obj\Debug\travel.csprojResolveAssemblyReference.cache
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\obj\Debug\travel.dll
+C:\Users\Newshore\Documents\Newshore\Barcelona TRAVEL CONSULTING\travel\website\obj\Debug\travel.pdb
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\travel.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\travel.pdb
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\businesslogic.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\ClientDependency.Core.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\cms.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\controls.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\CookComputing.XmlRpcV2.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Examine.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\HtmlAgilityPack.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\interfaces.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Lucene.Net.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Microsoft.Web.Helpers.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\MySql.Data.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Our.Umbraco.uGoLive.47x.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Our.Umbraco.uGoLive.Checks.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Our.Umbraco.uGoLive.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\SQLCE4Umbraco.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\System.Data.SqlServerCe.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\System.Data.SqlServerCe.Entity.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\System.Web.Helpers.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\System.Web.Razor.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\System.Web.WebPages.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\System.Web.WebPages.Razor.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\TidyNet.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Umbraco.Core.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.DataLayer.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.editorControls.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.MacroEngines.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.macroRenderings.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.providers.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\Umbraco.Web.UI.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.webservices.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\umbraco.XmlSerializers.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\UmbracoExamine.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\bin\UrlRewritingNet.UrlRewriter.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\obj\Debug\travel.csprojResolveAssemblyReference.cache
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\obj\Debug\travel.dll
+C:\Users\Newshore\Documents\Newshore\BarcelonaTRAVELCONSULTING\travel\website\obj\Debug\travel.pdb
