@@ -46,8 +46,13 @@
             string categories = product.GetProperty("selectCategories").Value.Replace(" ", "-").Replace(",", " ").ToLower();
             <a class="fancybox" rel="all" href="#description-product-@product.Id" title="@product.GetProperty("title")" cat="@categories">
                 <div id="@product.Id" style="background: #@product.GetProperty("color").Value" class="item @categories">
-                    @if(product.image.mediaItem.Count() != 0) {
+                    @if (product.image.mediaItem.Count() != 0)
+                    {
                         <img width="100px" height="100px" src="@product.image.mediaItem[0].Image.umbracoFile" alt="Logo" />
+                    }
+                    else 
+                    {
+                        <img width="100px" height="100px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
                     }
                     <h2>@product.GetProperty("title")</h2>
                     <p>@Html.Raw(product.GetProperty("description").Value.Substring(0, 50))...</p>
