@@ -23,16 +23,21 @@
 }
 
 <link href="/css/products.css" rel="stylesheet" type="text/css" />
-<link href="/css/screen.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/scripts/products.js"></script>
 
 <div class="wrap-products">
     <div id="container-categories">
-        <div data-filter="*">show all</div>
+        <div data-filter="*">
+            <p>show all</p>
+            <img width="60px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sunagakure_Symbol.svg/200px-Sunagakure_Symbol.svg.png" alt="Logo Categoria Temporal" />
+        </div>
         @while (preValues.MoveNext())
         {
             string preValue = preValues.Current.Value;
-            <div data-filter=".@preValue.Replace(" ", "-").Replace(",", " ").ToLower()">@preValue</div>
+            <div data-filter=".@preValue.Replace(" ", "-").Replace(",", " ").ToLower()">
+                <p>@preValue</p>
+                <img width="60px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sunagakure_Symbol.svg/200px-Sunagakure_Symbol.svg.png" alt="Logo Categoria Temporal" />
+            </div>
         }
     </div>
     <div id="container-products">

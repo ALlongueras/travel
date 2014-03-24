@@ -86,6 +86,9 @@
         <script src="/scripts/profileCycle.js" type="text/javascript"></script>
         <script type="text/javascript" src="/scripts/libs/bootstrap/bootstrap.min.js"></script>
         <script type="text/javascript" src="/scripts/isotope/jquery.isotope.min.js"></script>
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="/scripts/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="/scripts/fancybox/source/jquery.fancybox.pack.js"></script>
         <!-- Script for IE8 -->
         <script type="text/javascript" src="/scripts/libs/respond/respond.min.js"></script>
     </body>
