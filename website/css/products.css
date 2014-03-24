@@ -54,7 +54,7 @@ div#container-products
     display: none;
 }
 
-div#container-products > div 
+div#container-products > a > div 
 {
     min-width: 100px;
     width: 22%;
@@ -109,29 +109,30 @@ div#container-categories > div > p
 
 /********** effects ***************/
 
-div#container-products > div {
+div#container-products > a > div {
 	-webkit-box-shadow:0 0 10px #333;
 	-moz-box-shadow:0 0 10px #333;
 	-ms-box-shadow:0 0 10px #333;
 	-o-box-shadow:0 0 10px #333;
 }
 
-div#container-products > div img {
-	-webkit-transition:all .7s ease-out;
-	-moz-transition:all .7s ease-out;
-	-ms-transition:all .7s ease-out;
-	-o-transition:all .7s ease-out;
+div#container-products > a > div img {
+	-webkit-transition:all .5s ease-in;
+	-webkit-transform:scale(1);
+	-moz-transition:all .5s ease-in;
+	-moz-transform:scale(1);
+	-ms-transition:all .5s ease-in;
+	-ms-transform:scale(1);
+	-o-transition:all .5s ease-in;
+	-o-transform:scale(1);
+	opacity:1;
 }
 
-div#container-products > div:hover img {
-	-webkit-transform:scale(6);
-	-moz-transform:scale(6);
-	-ms-transform:scale(6);
-	-o-transform:scale(6);
+div#container-products > a > div:hover img {
 	opacity:0;
 }
 
-div#container-products > div h2 {
+div#container-products > a > div h2 {
 	font-size:1em;
 	color:#fff;
 	line-height:1.5em;
@@ -153,7 +154,7 @@ div#container-products > div h2 {
 	top: 3.5em;
 }
 
-div#container-products > div:hover h2 {
+div#container-products > a > div:hover h2 {
 	-webkit-transform:scale(2);
 	-moz-transform:scale(2);
 	-ms-transform:scale(2);
@@ -163,7 +164,7 @@ div#container-products > div:hover h2 {
 }
 
 
-div#container-products > div p {
+div#container-products > a > div p {
 	color: #fff;
 	font-family:helvetica, arial, sans-serif;
 	text-transform:uppercase;
@@ -185,7 +186,7 @@ div#container-products > div p {
     bottom: 3em;
 }
 
-div#container-products > div:hover p {
+div#container-products > a > div:hover p {
 	-webkit-transform:scale(1);
 	-moz-transform:scale(1);
 	-ms-transform:scale(1);
