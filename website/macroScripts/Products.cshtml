@@ -8,18 +8,11 @@
             {
                 nodeProducts = item;
             }
-            else if (item.Name.Equals("Products"))
+            else if (item.Name.Equals("Categories"))
             {
                 nodeCategories = item;
             }
     }
-    
-    System.Xml.XPath.XPathNodeIterator xpathIterator = @umbraco.library.GetPreValues(1218);//1178
-    xpathIterator.MoveNext(); //move to first
-    System.Xml.XPath.XPathNodeIterator preValues = xpathIterator.Current.SelectChildren("preValue", "");
-    
-    
-    
 }
 
 <link href="/css/products.css" rel="stylesheet" type="text/css" />
@@ -27,46 +20,48 @@
 
 <div class="wrap-products">
     <div id="container-categories">
-        <div data-filter="*">
-            <p>show all</p>
-            <img width="60px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sunagakure_Symbol.svg/200px-Sunagakure_Symbol.svg.png" alt="Logo Categoria Temporal" />
-        </div>
-        @while (preValues.MoveNext())
+        @foreach (dynamic category in nodeCategories.GetChildrenAsList.Items)
         {
-            string preValue = preValues.Current.Value;
-            <div data-filter=".@preValue.Replace(" ", "-").Replace(",", " ").ToLower()">
-                <p>@preValue</p>
-                <img width="60px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sunagakure_Symbol.svg/200px-Sunagakure_Symbol.svg.png" alt="Logo Categoria Temporal" />
+            string categories = category.GetProperty("identifier").Value.Replace(" ", "-").Replace(",", " ").ToLower();
+            <div data-filter=".@categories">
+                <div>
+                    @if (category.image.mediaItem.Count() != 0)
+                    {
+                        @*<img width="76px" height="76px" src="@category.image.mediaItem[0].Image.umbracoFile" alt="Logo" />*@
+                        <img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
+                    }
+                    else
+                    {
+                        <img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
+                    }
+                </div>
+                <p>@category.GetProperty("title").Value</p>
             </div>
         }
     </div>
+    <div class="clear"></div>
     <div id="container-products">
-        @foreach (dynamic product in @nodeProducts.GetChildrenAsList.Items)
+        @foreach (dynamic product in nodeProducts.GetChildrenAsList.Items)
         {
             string categories = product.GetProperty("selectCategories").Value.Replace(" ", "-").Replace(",", " ").ToLower();
-            <a class="fancybox" rel="all" href="#description-product-@product.Id" title="@product.GetProperty("title")" cat="@categories">
-                <div id="@product.Id" style="background: #@product.GetProperty("color").Value" class="item @categories">
+            
+            <div class="item @categories">
+                <div id="@product.Id" style="background: #666666">
                     @if (product.image.mediaItem.Count() != 0)
                     {
-                        <img width="100px" height="100px" src="@product.image.mediaItem[0].Image.umbracoFile" alt="Logo" />
+                        <img width="76px" height="76px" src="@product.image.mediaItem[0].Image.umbracoFile" alt="Logo" />
                     }
-                    else 
+                    else
                     {
-                        <img width="100px" height="100px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
+                        <img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
                     }
-                    <h2>@product.GetProperty("title")</h2>
-                    <p>@Html.Raw(product.GetProperty("description").Value.Substring(0, 50))...</p>
                 </div>
-            </a>
-        }
-    </div>
-    <div id="container-description-products">
-        @foreach (var product in @nodeProducts.GetChildrenAsList.Items)
-        {
-            <div  id="description-product-@product.Id">
-                <h3>@product.GetProperty("title")</h3>
-                <p>@product.GetProperty("description")</p>
+                <div>
+                    <h2>@product.GetProperty("title")</h2>
+                    <p>@Html.Raw(product.GetProperty("description").Value)</p>
+                </div>
             </div>
+            
         }
     </div>
 </div>

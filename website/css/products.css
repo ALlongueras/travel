@@ -51,39 +51,75 @@
 /******* style box products **************/
 div#container-products 
 {
-    display: none;
+    margin-top: 1em;
 }
 
-div#container-products > a > div 
+div#container-products > div 
 {
-    min-width: 100px;
-    width: 22%;
+    width: 49%;
+    display:inline-block;
+}
+
+div#container-products > div > div
+{
     float: left;
     margin: 1em 1em;
-    padding: 0 1em;
-    height: 200px;
-    text-align: center;
+}
+
+.item > div:first-child
+{
+    min-width: 80px;
     vertical-align: middle;
+    text-align: center;
+}
+
+.item > div:last-child
+{
+    width: 70%;
+    text-align: justify;
+}
+
+.item > div:last-child > h2 
+{
+    margin: 1em 0 0 0;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.item > div:last-child > p   
+{
+    display: none;
 }
     
 #container-description-products > div 
 {
-    display: none;
+    
 }
 
 div#container-categories {
     text-align: center;
     vertical-align: middle;
+    border-bottom: 2px solid rgb(37, 153, 168);
+    height: 100px;
 }
 
-div#container-categories > div {
+div#container-categories > div 
+{
+    max-width: 16%;
     display: inline-block;
-    margin: 1em 1em;
-    padding: 0 1em;
-    height: 100px;
+    float:left;
+}
+
+div#container-categories > div > div {
+    display: inline-block;
+    margin: 0em 0.5em 0 0.5em;
+    padding: 0 0.5em;
+    height: 70px;
     background: #666666;
     color: #FFFFFF;
-    max-width: 100px;
+    max-width: 70px;
     
     -webkit-transition: -webkit-box-shadow 0.5s ease-out;;
     -moz-transition: -moz-box-shadow 0.5s ease-out;
@@ -95,7 +131,7 @@ div#container-categories > div {
     transition: background 0.5s linear;
 }
 
-div#container-categories > div:hover, .active_subcategory {
+div#container-categories > div > div:hover, .active_subcategory {
     -moz-box-shadow: 0px 0px 20px #666666;
   	-webkit-box-shadow: 0px 0px 20px #666666;
   	box-shadow: 0px 0px 20px #666666;
@@ -105,11 +141,14 @@ div#container-categories > div:hover, .active_subcategory {
 div#container-categories > div > p 
 {
     margin: 2px 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4em;
 }
 
 /********** effects ***************/
 
-div#container-products > a > div {
+/*div#container-products > a > div {
 	-webkit-box-shadow:0 0 10px #333;
 	-moz-box-shadow:0 0 10px #333;
 	-ms-box-shadow:0 0 10px #333;
@@ -192,4 +231,9 @@ div#container-products > a > div:hover p {
 	-ms-transform:scale(1);
 	-o-transform:scale(1);
 	opacity:1;
+}*/
+
+.clear 
+{
+    clear:both;
 }
