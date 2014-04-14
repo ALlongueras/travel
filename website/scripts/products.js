@@ -13,8 +13,6 @@
         $(this).find("div").addClass('active_subcategory');
         selector = $(this).attr('data-filter');
         showProducts(selector);
-        //var groupCategory = (selector == '*') ? 'all' : selector.replace(".", "");
-        //$(".fancybox[cat*="+groupCategory+"]").attr('rel', groupCategory);
         return false;
     });
 
@@ -25,21 +23,25 @@
 
     $(".item").click(function() {
         var $target = $(this);
-        $target.find("div:eq(1)").animate({
-            "margin-top": "-18px"
-        }, 500, function() {
-            $target.find("div:eq(1) > p").show("slow");
+        var is_visible = $target.find("div:eq(1) > p").is(":visible");
+        
+        $(".item").each(function() {
+            var $targeteach = $(this);
+            $targeteach.find("div:eq(1)").animate({
+                "margin-top": "14px"
+            }, 500, function() {
+                $targeteach.find("div:eq(1) > p").hide("slow");
+            });
         });
+        
+        if(!is_visible) {
+            var marginTop = ($target.find("div:eq(1)").css("margin-top") == "-18px") ? "14px" : "-18px";
+            $target.find("div:eq(1)").animate({
+                "margin-top": marginTop
+            }, 500, function() {
+                $target.find("div:eq(1) > p").show("slow");
+            });
+        }
     });
 
-    /*$('.fancybox').fancybox({
-		maxWidth	: 800,
-		fitToView	: true,
-		autoSize	: true,
-		closeClick	: false,
-		openEffect	: 'elastic',
-		closeEffect	: 'elastic',
-        loop        : true,
-        arrows : true
-	});*/
 }

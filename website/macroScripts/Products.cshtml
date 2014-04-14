@@ -27,8 +27,8 @@
                 <div>
                     @if (category.image.mediaItem.Count() != 0)
                     {
-                        @*<img width="76px" height="76px" src="@category.image.mediaItem[0].Image.umbracoFile" alt="Logo" />*@
-                        <img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
+                        <img width="76px" height="76px" src="@category.image.mediaItem[0].File.umbracoFile" alt="Logo" />
+                        @*<img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" />*@
                     }
                     else
                     {
@@ -60,6 +60,7 @@
                     <h2>@product.GetProperty("title")</h2>
                     <p>@Html.Raw(product.GetProperty("description").Value)</p>
                 </div>
+                <div class="clear"></div>
             </div>
             
         }
