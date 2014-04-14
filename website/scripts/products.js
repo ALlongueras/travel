@@ -10,7 +10,7 @@
     // filter items when filter link is clicked
     $('#container-categories > div').click(function(){
         $('#container-categories > div > div').removeClass('active_subcategory');
-        $(this).find("div").addClass('active_subcategory');
+        $(this).find("div:eq(0)").addClass('active_subcategory');
         selector = $(this).attr('data-filter');
         showProducts(selector);
         return false;
@@ -24,7 +24,8 @@
     $(".item").click(function() {
         var $target = $(this);
         var is_visible = $target.find("div:eq(1) > p").is(":visible");
-        
+        $(".item > div").removeClass('active_subcategory');
+
         $(".item").each(function() {
             var $targeteach = $(this);
             $targeteach.find("div:eq(1)").animate({
@@ -36,10 +37,17 @@
         
         if(!is_visible) {
             var marginTop = ($target.find("div:eq(1)").css("margin-top") == "-18px") ? "14px" : "-18px";
+            $target.find("div:eq(0)").addClass('active_subcategory');
             $target.find("div:eq(1)").animate({
                 "margin-top": marginTop
             }, 500, function() {
-                $target.find("div:eq(1) > p").show("slow");
+                $target.find("div:eq(1) > p").show("slow", function() {
+                    if($target.parent().height() < $target.height()) {
+                        $target.parent().animate({
+                            "height": $target.height()
+                        });
+                    }
+                });
             });
         }
     });
