@@ -23,7 +23,7 @@
         @foreach (dynamic category in nodeCategories.GetChildrenAsList.Items)
         {
             string categories = category.GetProperty("identifier").Value.Replace(" ", "-").Replace(",", " ").ToLower();
-            <div data-filter=".@categories" >
+            <div data-filter=".@categories" description="#cat-@category.Id" >
                 <div class="border-radius">
                     @if (category.image.mediaItem.Count() != 0)
                     {
@@ -38,6 +38,10 @@
                     <p>@category.GetProperty("title").Value</p>
                 </div>
             </div>
+        }
+        @foreach (dynamic category in nodeCategories.GetChildrenAsList.Items)
+        {
+            <p class="desc-cate" id="cat-@category.Id">@category.GetProperty("description").Value</p>
         }
     </div>
     <div class="clear"></div>

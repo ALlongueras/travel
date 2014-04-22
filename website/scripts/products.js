@@ -11,7 +11,7 @@
     // filter items when filter link is clicked
     $('#container-categories > div').click(function () {
         $('#container-categories > div > div').removeClass('active_subcategory');
-        
+
         $(".item > div").removeClass('active_subcategory');
         $(".item > div > h2").removeClass('active_product');
 
@@ -30,6 +30,10 @@
 
             });
         });
+
+        var descCat = $(this).attr("description");
+        $(".desc-cate ").hide();
+        $(descCat).fadeIn("slow");
         return false;
     });
 
@@ -52,7 +56,7 @@
                 $targeteach.find("div:eq(1) > p").fadeOut("slow", function () {
                     $container.isotope('reLayout');
                 });
-                
+
             });
         });
 
