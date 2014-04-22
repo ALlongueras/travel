@@ -79,7 +79,7 @@ div#container-products > div > div
     min-width: 50px;
     vertical-align: middle;
     text-align: center;
-    background: #666666;
+    background: #EEE;
 }
 
 .item > div:nth-child(2)
