@@ -29,14 +29,14 @@
         $(".item").each(function() {
             var $targeteach = $(this);
             $targeteach.find("div:eq(1)").animate({
-                "margin-top": "14px"
+                "margin-top": "11px"
             }, 500, function() {
                 $targeteach.find("div:eq(1) > p").hide("slow");
             });
         });
         
         if(!is_visible) {
-            var marginTop = ($target.find("div:eq(1)").css("margin-top") == "-18px") ? "14px" : "-18px";
+            var marginTop = ($target.find("div:eq(1)").css("margin-top") == "-3px") ? "11px" : "-3px";
             $target.find("div:eq(0)").addClass('active_subcategory');
             $target.find("div:eq(1)").animate({
                 "margin-top": marginTop

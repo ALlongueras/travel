@@ -52,12 +52,20 @@
 div#container-products 
 {
     margin-top: 1em;
+    width: 102%;
 }
 
 div#container-products > div 
 {
     width: 49%;
     display:inline-block;
+    background: #EEE;
+    border-color: #FFF;
+    border-width: 8px;
+    border-style: solid;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px; 
 }
 
 div#container-products > div > div
@@ -68,9 +76,10 @@ div#container-products > div > div
 
 .item > div:first-child
 {
-    min-width: 80px;
+    min-width: 50px;
     vertical-align: middle;
     text-align: center;
+    background: #666666;
 }
 
 .item > div:nth-child(2)
@@ -83,9 +92,15 @@ div#container-products > div > div
 {
     margin: 1em 0 0 0;
     text-align: left;
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
     vertical-align: middle;
+    color: #666;
+}
+
+.item:hover > div:nth-child(2) > h2 
+{
+    color: rgb(37, 153, 168);
 }
 
 .item > div:nth-child(2) > p   
@@ -101,21 +116,23 @@ div#container-products > div > div
 div#container-categories {
     text-align: center;
     vertical-align: middle;
-    border-bottom: 2px solid rgb(37, 153, 168);
+    border-bottom: 1px solid rgb(37, 153, 168);
     height: 100px;
+    padding: 0 1em;
 }
 
 div#container-categories > div 
 {
     display: inline-block;
-    float:left;
+    /*float:left;*/
     width: 16%;
+    text-align: left;
 }
 
 div#container-categories > div > div:first-child {
     display: inline-block;
     margin: 0em 0.5em 0 0.5em;
-    height: 76px;
+    height: 50px;
     background: #666666;
     color: #FFFFFF;
     -webkit-transition: -webkit-box-shadow 0.5s ease-out;;
@@ -126,7 +143,7 @@ div#container-categories > div > div:first-child {
     -moz-transition: background 0.5s linear;
     -o-transition: background 0.5s linear;
     transition: background 0.5s linear;
-    float: left;
+    /*float: left;*/
 }
 
 div#container-categories > div > div:first-child:hover, .active_subcategory {
@@ -140,6 +157,8 @@ div#container-categories > div > div:nth-child(2)
 {
     font-size: 1.4em;
     vertical-align: middle;
+    display: inline-block;
+    width: 63%;
 }
 
 div#container-categories > div > div:nth-child(2) > p
@@ -151,4 +170,15 @@ div#container-categories > div > div:nth-child(2) > p
 .clear 
 {
     clear:both;
+}
+
+div.wrap-products {
+    margin-top: 40px;
+}
+
+.border-radius 
+{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;   
 }

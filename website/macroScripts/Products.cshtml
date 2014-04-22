@@ -23,16 +23,15 @@
         @foreach (dynamic category in nodeCategories.GetChildrenAsList.Items)
         {
             string categories = category.GetProperty("identifier").Value.Replace(" ", "-").Replace(",", " ").ToLower();
-            <div data-filter=".@categories">
-                <div>
+            <div data-filter=".@categories" >
+                <div class="border-radius">
                     @if (category.image.mediaItem.Count() != 0)
                     {
-                        <img width="76px" height="76px" src="@category.image.mediaItem[0].Image.umbracoFile" alt="Logo" />
-                        @*<img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" />*@
+                        <img width="50px" height="50px" src="@category.image.mediaItem[0].Image.umbracoFile" alt="Logo" />
                     }
                     else
                     {
-                        <img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
+                        <img width="50px" height="50px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
                     }
                 </div>
                 <div>
@@ -47,15 +46,15 @@
         {
             string categories = product.GetProperty("selectCategories").Value.Replace(" ", "-").Replace(",", " ").ToLower();
             
-            <div class="item @categories">
-                <div id="@product.Id" style="background: #666666">
+            <div class="item @categories" >
+                <div id="@product.Id" class="border-radius">
                     @if (product.image.mediaItem.Count() != 0)
                     {
-                        <img width="76px" height="76px" src="@product.image.mediaItem[0].Image.umbracoFile" alt="Logo" />
+                        <img width="50px" height="50px" src="@product.image.mediaItem[0].Image.umbracoFile" alt="Logo" />
                     }
                     else
                     {
-                        <img width="76px" height="76px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
+                        <img width="50px" height="50px" src="http://www.grupointercom.com/sites/default/files/business/logos/newshore.png" alt="Logo" /> 
                     }
                 </div>
                 <div>

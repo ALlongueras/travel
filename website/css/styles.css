@@ -4830,6 +4830,8 @@ footer {
   padding: 14px 0 0 0;
   overflow: hidden;
   background: #ddd;
+  position:absolute;
+  bottom:0px;
 }
 footer .copyright {
   float: left;
