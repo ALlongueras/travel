@@ -124,7 +124,7 @@ div#container-categories > div
 {
     display: inline-block;
     /*float:left;*/
-    width: 23%;
+    width: 24%;
     text-align: left;
 }
 
@@ -132,7 +132,7 @@ div#container-categories > div > div:first-child {
     display: inline-block;
     margin: 0em 0.5em 0 0.5em;
     height: 50px;
-    background: #666666;
+    background: #EEE;
     color: #FFFFFF;
     -webkit-transition: -webkit-box-shadow 0.5s ease-out;;
     -moz-transition: -moz-box-shadow 0.5s ease-out;
