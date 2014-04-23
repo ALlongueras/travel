@@ -207,6 +207,7 @@
     <Content Include="css\normalize.css" />
     <Content Include="css\page.css" />
     <Content Include="css\print.css" />
+    <Content Include="css\products.css" />
     <Content Include="css\profile.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\uBlogsy.css" />
