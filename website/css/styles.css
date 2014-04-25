@@ -4867,7 +4867,7 @@ footer .links li a {
 }
 .nav-principal {
   font: 18px 'hero', 'helvetica', 'helvetica neue', Arial, sans-serif;
-  margin: 20px 0;
+  /*margin: 20px 0;*/
 }
 .nav-principal li {
   position: relative;
@@ -5026,4 +5026,9 @@ h4 {
 h4 span {
   color: #333;
   margin-left: 10px;
+}
+header > .container > div 
+{
+    display: inline-block;
+    vertical-align: middle;
 }
