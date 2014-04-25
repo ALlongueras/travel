@@ -117,7 +117,7 @@ div#container-categories {
     text-align: center;
     vertical-align: middle;
     border-bottom: 1px solid rgb(37, 153, 168);
-    padding: 0 1em 2em 1em;
+    padding: 0 1em 1.5em 1em;
 }
 
 div#container-categories > div 
@@ -202,5 +202,6 @@ div.wrap-products {
 .desc-cate 
 {
     display: none;
-    margin-top: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
 }
