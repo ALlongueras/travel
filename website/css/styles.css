@@ -5032,3 +5032,13 @@ header > .container > div
     display: inline-block;
     vertical-align: middle;
 }
+
+header > .container > div:first-child 
+{
+    width: 40%;
+}
+
+header > .container > div:nth-child(2) 
+{
+    width: 64%;
+}
