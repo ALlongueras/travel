@@ -202,6 +202,6 @@ div.wrap-products {
 .desc-cate 
 {
     display: none;
-    margin-top: 1.5em;
-    margin-bottom: 0em;
+    margin: 1.5em auto 0 auto;
+    width: 75%;
 }
