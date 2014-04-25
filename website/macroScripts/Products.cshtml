@@ -35,13 +35,13 @@
                     }
                 </div>
                 <div>
-                    <p>@category.GetProperty("title").Value</p>
+                    <p>@Html.Raw(category.GetProperty("title").Value)</p>
                 </div>
             </div>
         }
         @foreach (dynamic category in nodeCategories.GetChildrenAsList.Items)
         {
-            <p class="desc-cate" id="cat-@category.Id">@category.GetProperty("description").Value</p>
+            <p class="desc-cate" id="cat-@category.Id">@Html.Raw(category.GetProperty("description").Value)</p>
         }
     </div>
     <div class="clear"></div>
@@ -62,7 +62,7 @@
                     }
                 </div>
                 <div>
-                    <h2>@product.GetProperty("title")</h2>
+                    <h2>@Html.Raw(product.GetProperty("title").Value)</h2>
                     <p>@Html.Raw(product.GetProperty("description").Value)</p>
                 </div>
             </div>
